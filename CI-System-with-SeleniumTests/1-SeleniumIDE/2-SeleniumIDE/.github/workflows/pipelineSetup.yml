@@ -1,4 +1,5 @@
 name: Selenium Ide CI
+
 on:
   push:
     branches:
@@ -6,19 +7,28 @@ on:
   pull_request:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
       - name: Set up .NET
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 6.0.x
+
       - name: Install dependencies
         run: dotnet restore
+        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
+
       - name: Build
         run: dotnet build --no-restore
+        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
+
       - name: Run tests
         run: dotnet test --verbosity normal
+        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
+
