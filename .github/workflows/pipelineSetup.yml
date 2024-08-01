@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # Latest version as of now
 
       - name: Set up .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v3  # Latest version as of now
         with:
           dotnet-version: 6.0.x
 
@@ -31,4 +31,5 @@ jobs:
       - name: Run tests
         run: dotnet test --verbosity normal
         working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
+
 
