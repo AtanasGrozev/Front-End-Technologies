@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "QTamHTCjn46u3CSJUTX/gt8A+sdV/Bo5PWToe99dm4/RVz/qLm2ZS036xqGynhP8HR7QvXMmI/jWvw2Kp6ykzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Atanas Work\\Documents\\GitHub\\Front-End-Technologies\\CI-System-with-SeleniumTests\\1-SeleniumIDE\\2-SeleniumIDE\\SeleniumIDE\\SeleniumIde.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\microsoft.codecoverage\\17.10.0\\microsoft.codecoverage.17.10.0.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\microsoft.net.test.sdk\\17.10.0\\microsoft.net.test.sdk.17.10.0.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.10.0\\microsoft.testplatform.objectmodel.17.10.0.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\microsoft.testplatform.testhost\\17.10.0\\microsoft.testplatform.testhost.17.10.0.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\nunit.analyzers\\4.2.0\\nunit.analyzers.4.2.0.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\nunit3testadapter\\4.6.0\\nunit3testadapter.4.6.0.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\selenium.webdriver\\4.23.0\\selenium.webdriver.4.23.0.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\selenium.webdriver.chromedriver\\127.0.6533.8800\\selenium.webdriver.chromedriver.127.0.6533.8800.nupkg.sha512",
+    "C:\\Users\\Atanas Work\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
