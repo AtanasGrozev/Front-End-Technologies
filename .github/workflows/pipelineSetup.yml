@@ -22,14 +22,14 @@ jobs:
 
       - name: Install dependencies
         run: dotnet restore
-        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
+        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE/SeleniumIde.sln
 
       - name: Build
         run: dotnet build --no-restore
-        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
+        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE/SeleniumIde.sln
 
       - name: Run tests
         run: dotnet test --verbosity normal
-        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
+        working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE/SeleniumIde.sln
 
 
