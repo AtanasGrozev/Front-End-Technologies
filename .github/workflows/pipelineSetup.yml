@@ -28,10 +28,16 @@ jobs:
         run: dotnet build --no-restore
         working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
 
+      - name: Install Selenium dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+          wget https://chromedriver.storage.googleapis.com/$(wget -qO- https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip -d /usr/local/bin/
+          rm chromedriver_linux64.zip
+
       - name: Run tests
         run: dotnet test --verbosity normal
         working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
-
-
 
 
