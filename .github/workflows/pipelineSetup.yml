@@ -13,10 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
+<<<<<<< HEAD
         uses: actions/checkout@v3  
 
       - name: Set up .NET
         uses: actions/setup-dotnet@v3  
+=======
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+>>>>>>> 8192a6d7595d86f4454dc9e502436a0e7276733b
         with:
           dotnet-version: 8.0.x
 
@@ -27,6 +34,14 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
         working-directory: CI-System-with-SeleniumTests/1-SeleniumIDE/2-SeleniumIDE
+
+      - name: Install Selenium dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+          wget https://chromedriver.storage.googleapis.com/$(wget -qO- https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip -d /usr/local/bin/
+          rm chromedriver_linux64.zip
 
       - name: Run tests
         run: dotnet test --verbosity normal
